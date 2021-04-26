@@ -29,7 +29,7 @@ def do_mention(mention, reddit_object, api_key):
 
     url = upload_to_imgbb("out.jpg", api_key)
 
-    mention.reply(f"Here is your processed image:\n{url}\n\nIt will be available for 10 minutes")
+    mention.reply(f"Here is your processed image:\n{url}\n\nIt will be available for 10 minutes.\n\nThis bot adds a comment to the bottom of the posted image.")
 
 def upload_to_imgbb(file, api_key):
     with open(file, "rb") as file:
