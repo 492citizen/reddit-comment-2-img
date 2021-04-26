@@ -59,4 +59,6 @@ while 1:
             do_mention(mention, reddit, imgbb_key)
         except AttributeError:
             pass
+        except Exception as e:
+            logging.error(f"Could not complete request:\n{e}")
 
